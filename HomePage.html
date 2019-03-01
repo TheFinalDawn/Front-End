@@ -1,57 +1,66 @@
 <!-- This is the HTML page for the Home Page of ma.ge -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+  <head> <!-- note: May I ask what fonts are in use on these sites?  Um, bootstrap is just extra styling classes and idk what is on fontawesome. How do i send you the site?  Up here. Go to the repository, click settings, find Pages (probably on the first page), ok, so scroll down on the first settings page till you find Source for github Pages, click master branch /docs folder, and it should save.-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="utf-8">
     <title>MAGE</title>
   </head>
   <body>
-    <h2>MAGE</h2>
-    <h4>Home of Creators big and small</h4>
+    <header>
+      <h2 class="larger-letters">MAGE</h2>
+      <h4>Home of Creators big and small</h4>
+    </header>
     <nav class="categories-container">
-      <a href="MusicPage.html"><h3>Music</h3></a>
-      <a href="ArtPage.html"><h3>Art</h3></a>
-      <a href="GamingPage.html"><h3>Gaming</h3></a>
-      <a href="EntertainmentPage.html"><h3>Entertainment</h3></a>
+      <a class="link" id="MusicLink" href="MusicPage.html"><h3><span class="medium-letters">M</span>usic</h3></a>
+      <a class="link" id="ArtLink" href="ArtPage.html"><h3><span class="medium-letters">A</span>rt</h3></a>
+      <a class="link" id="GamingLink" href="GamingPage.html"><h3><span class="medium-letters">G</span>aming</h3></a>
+      <a class="link" id="EntertainmentLink" href="EntertainmentPage.html"><h3><span class="medium-letters">E</span>ntertainment</h3></a>
     </nav>
         <h2>On Fire</h2>
-        <div class="example-post">
-          <div class="image-post">
-            <img src="example-image.jpg">
-          </div>
-          <div class="text-post">
-            <h4>UwU had a great time at the beach with my epic gamer homies</h4>
-          </div>
-          <div class="post-details">
+        <div>
 
-          </div>
-          <div class="like/dislike">
-            <button>
-          </div>
         </div>
 
   </body>
 </html>
 <style media="screen">
-.example-post {
-  border: 1px solid black;
-  height: 500px;
-  width: 635px;
-  background-color: #D6D6D6;
-  align-items: center;
-  float:right;
-  margin-right: 500px;
-  padding: 5px 10px 0px 10px;
+.larger-letters {
+  font-size: 84px;
 }
-.imagepost {
+.medium-letters {
+  font-size: 72px;
+}
+.link {
+  margin: 0px 5px 0px 5px;
+  float: right;
+  align-items: right;
+  font-size: 56px;
+}
+#MusicLink {
+  background: -webkit-linear-gradient(0.25turn, #FF02C0, #DBB5D2, #CF003F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
-.text-post{
+#ArtLink { /* colors for art? And use 0.25turn to make it go left to right */
+background: -webkit-linear-gradient(0.25turn, #00A3CF, #CF1C00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+#GamingLink {
+  background: -webkit-linear-gradient(0.25turn, #000000, #61FF00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+#EntertainmentLink {
+  background: -webkit-linear-gradient(0.25turn, #000000, #FF0000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+.categories-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-flow: center;
-  align-items: baseline;
-
+  margin: 0px 5px 0px 5px;
 }
 </style>
